@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Home">
+      <div class="container">
+        <div class="head text-center mt-5 mb-5 w-100">
+          <div class="head-text position-relative d-inline-block">
+            <h1 class="">Bookmarker</h1>
+          </div>
+        </div>
+        <form class="input-websit mt-5">
+          <div class="mt-4 mb-4">
+            <div class="form-haed text-center d-flex justify-content-center">
+              <h2 class="h3 pe-2 ps-2">
+                <i class="fa-solid fa-bookmark h3"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark h3"></i>
+              </h2>
+            </div>
+            <div class="inputes mt-4">
+              <div class="siteName">
+                <div class="head-input d-flex mb-2">
+                  <i class="fa-solid fa-book-bookmark pe-2 fs-5"></i>
+                  <h3 class="h6">Site Name</h3>
+                </div>
+                <div class="form-input mb-3">
+                  <input
+                    type="text"
+                    placeholder="Bookmark Name"
+                    class="form-control focus-ring focus-ring-warning"
+                    id="bookName"
+                    required
+                  />
+                  <label for="bookName" class="form-label"></label>
+
+                </div>
+              </div>
+            </div>
+            <div class="inputes mt-4">
+              <div class="siteName">
+                <div class="head-input d-flex mb-2">
+                  <i class="fa-solid fa-link pe-2 fs-5"></i>
+                  <h3 class="h6">Site URL</h3>
+                </div>
+                <div class="form-input mb-3">
+                  <input
+                    type="url"
+                    placeholder="Website URL"
+                    class="form-control focus-ring focus-ring-warning"
+                    id="bookURL"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              onclick="addBook()"
+              class="input-supmit border-0 d-block m-auto mt-4"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+        <div class="adding mb-5">
+          <div class="adding-head row bg-white mt-4">
+            <div class="col-3 text-center text-capitalize">
+              <h5 class="pt-2 h6">index</h5>
+            </div>
+            <div class="col-3 text-center text-capitalize">
+              <h5 class="pt-2 h6">Website Name</h5>
+            </div>
+            <div class="col-3 text-center text-capitalize">
+              <h5 class="pt-2 h6">Visit</h5>
+            </div>
+            <div class="col-3 text-center text-capitalize">
+              <h5 class="pt-2 h6">Delete</h5>
+            </div>
+          </div>
+          <div class="adding-body row bg-white" id="dataRow"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
